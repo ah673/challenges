@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/* Given a number N, determine the smallest number that is divisible by numbers from 1 to N */
 public class LeastCommonMultiple {
 	
 	public static int leastCommonMultipleFrom1toN( int number ){
