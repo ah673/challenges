@@ -1,7 +1,7 @@
-package ho.amy.unittest;
+package ho.amy.unittest.lcm;
 
 import static org.junit.Assert.*;
-import ho.amy.puzzles.PrimeFactorGenerator;
+import ho.amy.puzzles.lcm.PrimeFactorGenerator;
 
 import java.util.Arrays;
 import java.util.List;

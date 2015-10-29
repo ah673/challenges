@@ -1,7 +1,7 @@
-package ho.amy.unittest;
+package ho.amy.unittest.lcm;
 
 import static org.junit.Assert.assertEquals;
-import ho.amy.puzzles.LeastCommonMultiple;
+import ho.amy.puzzles.lcm.LeastCommonMultiple;
 
 import java.util.Arrays;
 import java.util.Collections;

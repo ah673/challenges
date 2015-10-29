@@ -1,4 +1,4 @@
-package ho.amy.puzzles;
+package ho.amy.puzzles.lcm;
 
 import java.util.ArrayList;
 import java.util.Arrays;
