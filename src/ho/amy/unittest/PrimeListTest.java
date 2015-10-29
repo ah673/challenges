@@ -13,6 +13,8 @@ public class PrimeListTest {
 	public void primeFactorsOfPrimeIsSelf(){
 		List<Integer> primeFactors = PrimeFactorGenerator.primeFactorization( 2 );
 		assertEquals(primeFactors.size(), 1 );
+		int factor = primeFactors.iterator().next();
+		assertEquals( factor, 2 );
 	}
 
 }
