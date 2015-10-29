@@ -7,15 +7,23 @@ import java.util.Map;
 
 public class LeastCommonMultiple {
 	
-	public static int leastCommonFrom1toN( int number ){
-		Map<Integer, Integer> primeCounts = new HashMap<Integer, Integer>();
-		if ( number == 1 ){
-			return number;
+	public static int leastCommonMultipleFrom1toN( int number ){
+		Map<Integer, Integer> globalPrimeCounts = new HashMap<Integer, Integer>();
+		for ( int i = 1; i <= number; i++ ){
+			List<Integer> primeFactors = PrimeFactorGenerator.primeFactorization( i );
+			
+			Map<Integer, Integer> primeFactorCount = provideCounts( primeFactors );
+			for ( int prime : primeFactorCount.keySet() ){
+				if ( !globalPrimeCounts.containsKey( prime ) ){
+					globalPrimeCounts.put( prime, 0 );
+				}
+				int maxCount = Math.max( primeFactorCount.get( prime ), globalPrimeCounts.get( prime ) );
+				globalPrimeCounts.put( prime, maxCount );
+			}
 		}
-		List<Integer> primeFactors = PrimeFactorGenerator.primeFactorization( number );
-		Map<Integer, Integer> primeFactorCount = provideCounts( primeFactors );
 		
-		
+		int leastCommonMultiple = multipleOutKeysRaisedToValues( globalPrimeCounts );
+		return leastCommonMultiple;
 	}
 
 	public static Map<Integer, Integer> provideCounts( Collection<Integer> values ) {
@@ -30,5 +38,15 @@ public class LeastCommonMultiple {
 		}
 		return counts;
 		
+	}
+	
+	private static int multipleOutKeysRaisedToValues( Map<Integer, Integer> globalPrimeCounts ) {
+		int value = 1;
+		for ( int key : globalPrimeCounts.keySet() ){
+			int count = globalPrimeCounts.get( key );
+			double raised = Math.pow( key, count );
+			value *= raised;
+		}
+		return value;
 	}
 }
