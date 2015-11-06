@@ -1,7 +1,7 @@
 package ho.amy.unittest.string.subsets;
 
 import static org.junit.Assert.*;
-import ho.amy.puzzles.string.subsets.ExcelColumnTranslator;
+import ho.amy.puzzles.string.excelcolumntranslator.ExcelColumnTranslator;
 
 import org.junit.Test;
 
