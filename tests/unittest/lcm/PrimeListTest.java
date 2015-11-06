@@ -1,12 +1,13 @@
-package ho.amy.unittest.lcm;
+package unittest.lcm;
 
 import static org.junit.Assert.*;
-import ho.amy.puzzles.lcm.PrimeFactorGenerator;
 
 import java.util.Arrays;
 import java.util.List;
 
 import org.junit.Test;
+
+import strings.lcm.PrimeFactorGenerator;
 
 public class PrimeListTest {
 	

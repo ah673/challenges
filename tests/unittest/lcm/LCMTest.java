@@ -1,9 +1,10 @@
-package ho.amy.unittest.lcm;
+package unittest.lcm;
 
 import static org.junit.Assert.*;
-import ho.amy.puzzles.lcm.LeastCommonMultiple;
 
 import org.junit.Test;
+
+import strings.lcm.LeastCommonMultiple;
 
 public class LCMTest {
 

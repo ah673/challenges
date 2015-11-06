@@ -1,4 +1,4 @@
-package ho.amy.puzzles.lcm;
+package strings.lcm;
 
 import java.util.ArrayList;
 import java.util.Arrays;

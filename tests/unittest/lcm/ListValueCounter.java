@@ -1,7 +1,6 @@
-package ho.amy.unittest.lcm;
+package unittest.lcm;
 
 import static org.junit.Assert.assertEquals;
-import ho.amy.puzzles.lcm.LeastCommonMultiple;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -9,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Test;
+
+import strings.lcm.LeastCommonMultiple;
 
 public class ListValueCounter {
 	@Test

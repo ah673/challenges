@@ -1,9 +1,10 @@
-package ho.amy.unittest.string.subsets;
+package unittest.stringsubsets;
 
 import static org.junit.Assert.*;
-import ho.amy.puzzles.string.excelcolumntranslator.ExcelColumnTranslator;
 
 import org.junit.Test;
+
+import strings.excelcolumntranslator.ExcelColumnTranslator;
 
 public class ExcelColumnTranslatorTest {
 
