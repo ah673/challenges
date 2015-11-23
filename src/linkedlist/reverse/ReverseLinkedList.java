@@ -12,6 +12,20 @@ public class ReverseLinkedList {
 		return newHead;
 	}
 	
+	public ListNode reverseListIteratively( ListNode head ){
+		if ( head == null ){
+			return null;
+		}
+		ListNode runner = head.next;
+		while ( runner != null ){
+			ListNode next = runner.next;
+			runner.next = head;
+			head = runner;
+			runner = next;
+		}
+		return head;
+	}
+	
 	public static class ListNode {
 		int val;
 		ListNode next;
