@@ -22,10 +22,5 @@ public class ReverseLinkedList {
 			return String.valueOf(val);
 		}
 	}
-	
-	public ListNode reverseListIteratively( ListNode head ){
-		
-	}
-
 }
 
