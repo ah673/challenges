@@ -12,5 +12,19 @@ public class HammingWeightTest {
 		int numberOf1Bits = HammingWeight.numberOfOneBits( number );
 		assertEquals( 1, numberOf1Bits );
 	}
-
+	
+	@Test
+	public void hammingWeightOn2() {
+		int number = 2;
+		int numberOf1Bits = HammingWeight.numberOfOneBits( number );
+		assertEquals( 1, numberOf1Bits );
+	}
+	
+	
+	@Test
+	public void hammingWeightOn7() {
+		int number = 7;
+		int numberOf1Bits = HammingWeight.numberOfOneBits( number );
+		assertEquals( 3, numberOf1Bits );
+	}
 }
