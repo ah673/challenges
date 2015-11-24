@@ -29,5 +29,11 @@ public class PowerOfTwoTest {
 		boolean zeroIsPowerOfTwo = PowerOfTwo.isPowerOfTwo( 0 );
 		assertFalse( zeroIsPowerOfTwo );
 	}
+	
+	@Test
+	public void test_three() {
+		boolean threeIsPowerOfTwo = PowerOfTwo.isPowerOfTwo( 3 );
+		assertFalse( threeIsPowerOfTwo );
+	}
 
 }
