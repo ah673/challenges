@@ -13,17 +13,20 @@ public class ReverseLinkedList {
 	}
 	
 	public ListNode reverseListIteratively( ListNode head ){
-		if ( head == null ){
-			return null;
+		if ( head == null || head.next == null ){
+			return head;
 		}
 		ListNode runner = head.next;
-		while ( runner != null ){
+		while ( true ){
+			if ( runner.next == null ){
+				runner.next = head;
+				return runner;
+			}
 			ListNode next = runner.next;
 			runner.next = head;
 			head = runner;
 			runner = next;
 		}
-		return head;
 	}
 	
 	public static class ListNode {
