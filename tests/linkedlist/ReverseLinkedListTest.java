@@ -1,7 +1,6 @@
-package linkedlist.reverse;
+package linkedlist;
 
-import static org.junit.Assert.*;
-import linkedlist.reverse.ReverseLinkedList.ListNode;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 

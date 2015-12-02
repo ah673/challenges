@@ -1,4 +1,4 @@
-package linkedlist.reverse;
+package linkedlist;
 
 public class ReverseLinkedList {
 	
@@ -29,15 +29,5 @@ public class ReverseLinkedList {
 		}
 	}
 	
-	public static class ListNode {
-		int val;
-		ListNode next;
-		ListNode( int x ){ val = x; }
-		
-		@Override
-		public String toString(){
-			return String.valueOf(val);
-		}
-	}
 }
 
